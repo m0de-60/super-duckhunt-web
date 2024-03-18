@@ -136,12 +136,14 @@ a:active {
             <br>
             <li align='left'><span style="color:#DD8800"><b>At the top, under section [duckhunt]</b></span></li>
             <li align='left'><span style="color:#DD1111">" server = "</span> input the server being used.</li>
+            <li align='left'><span style="color:#DD1111">" port = "</span> For regular connection input 6667 (Version 1.1.0 to 1.1.3), for SSL use 6697 (Version 1.1.32+)</li>
             <li align='left'><span style="color:#DD1111">" botname = DuckHunt "</span>can be DuckHunt or whatever you choose (case sensative)</li>
             <li align='left'><span style="color:#DD1111"> " botpass = 0 "</span> is optional, set as 0 if not used. (case sensative)</li>
             <li align='left'><span style="color:#DD1111">" duckchan = #duckhunt "</span> is the bot channel. NO CAPS MUST BE ALL LOWER CASE: #channel. duckchan can be #duckhunt or whatever you choose. 1 CHANNEL ONLY</li>
             <li align='left'><span style="color:#DD1111">" botmaster = YourUsername "</span> this gives you full bot master control of the bot. REQUIRED.</li>
             <li align='left'><span style="color:#DD1111">" admin = 0 "</span> to clear admin list. Leave as 0 do not manually input admins.</li>
             <li align='left'><span style="color:#DD1111">" botignore = 0 "</span> to clear ignore list. Leave as 0 do not manually input ignores.</li>
+            <li align='left'><span style="color:#DD1111">" serverssl = "</span> (Version 1.1.32+) 'no' if using port non-SSL, 'yes' if using SSL (see SSL Option below)
 
             <br>[duckhunt]<br>
             server = irc.yourservername.net<br>
@@ -152,6 +154,19 @@ a:active {
             botmaster = YourUsername<br>
             admin = 0<br>
             ignore = 0
+            <br>
+            <br>
+            <span style="color:#DD8800">SSL Option v1.1.32+</span><br>
+            <br>
+            Versions 1.1.32 and higher can connect to IRC networks that support SSL/TLS! If you are using versions 1.1.0 to 1.1.3 SSL option is NOT AVAILABLE.
+            <br>
+            If you wish to use SSL, in duckhunt.cnf (described above), instead of port = 6667, use port = 6697, and add/set serverssl = yes:
+            <br>
+            port = 66697
+            <br>
+            ...
+            <br>
+            serverssl = yes
             <br>
             <br>
             <b>Do not manually alter any other settings in the file.</b> The bot has built in configuration commands. (See configuration). The above list of items may not appear in the same order in duckhunt.cnf. Check only section [duckhunt]
