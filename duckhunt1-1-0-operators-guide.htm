@@ -60,7 +60,7 @@ a:active {
 <p align='center'><img src='https://github.com/Neo-Coder-usa/super-duckhunt-web/blob/main/super-duckhunt-img.png?raw=true'></p>
 <p align='center'>
     <span style="color:#EF1212">
-    <b>v1.1.0+ OPERATOR'S GUIDE</b>
+    <b>version 1.1.0 to 1.1.3-2 OPERATOR'S GUIDE</b>
     <br>
     [Python Version for Win/Linux/EggDrop]
     </span>
@@ -143,7 +143,7 @@ a:active {
             <li align='left'><span style="color:#DD1111">" botmaster = YourUsername "</span> this gives you full bot master control of the bot. REQUIRED.</li>
             <li align='left'><span style="color:#DD1111">" admin = 0 "</span> to clear admin list. Leave as 0 do not manually input admins.</li>
             <li align='left'><span style="color:#DD1111">" botignore = 0 "</span> to clear ignore list. Leave as 0 do not manually input ignores.</li>
-            <li align='left'><span style="color:#DD1111">" serverssl = "</span> (Version 1.1.32+) 'no' if using port non-SSL, 'yes' if using SSL (see SSL Option below)
+            <li align='left'><span style="color:#DD1111">" serverssl = "</span> (Version 1.1.32+) 'off' if using port non-SSL, 'on' if using SSL (see SSL Option below)
 
             <br>[duckhunt]<br>
             server = irc.yourservername.net<br>
@@ -156,17 +156,21 @@ a:active {
             ignore = 0
             <br>
             <br>
-            <span style="color:#DD8800">SSL Option v1.1.32+</span><br>
+            <a name='ssl-config'></a>
+            <span style="color:#DD8800">SSL Option v1.1.3-2+</span><br>
             <br>
-            Versions 1.1.32 and higher can connect to IRC networks that support SSL/TLS! If you are using versions 1.1.0 to 1.1.3 SSL option is NOT AVAILABLE.
+            Versions 1.1.3-2 and higher can connect to IRC networks that support SSL/TLS! If you are using versions 1.1.0 to 1.1.3 SSL option is NOT AVAILABLE.
             <br>
-            If you wish to use SSL, in duckhunt.cnf (described above), instead of port = 6667, use port = 6697, and add/set serverssl = yes:
-            <br>
-            port = 66697
+            If you wish to use SSL, in duckhunt.cnf (described above), in [duckhunt] use port = 6697, and add/set serverssl = on<br>
+            <br>[duckhunt]<br>
             <br>
             ...
             <br>
-            serverssl = yes
+            port = 6697<br>
+            <br>
+            ...
+            <br>
+            serverssl = on<br>
             <br>
             <br>
             <b>Do not manually alter any other settings in the file.</b> The bot has built in configuration commands. (See configuration). The above list of items may not appear in the same order in duckhunt.cnf. Check only section [duckhunt]
