@@ -81,26 +81,23 @@ a:active {
     <p align=center>
     <span style="color:#00AA00"><b>HELP ARTICLES</b></span>
     </p>
-    1: Basic Commands
-    <br>
-    2: How The Game Works
-    <br>
-    3: Shopping For Items
-    <br>
-    4: Gun Info, Stats & Upgrades
-    <br>
-    5: Viewing Your Stats
-    <br>
-    6: In Game "Rules & Regulations"
+<ul>
+                    <li>1: <a href=super-duckhunt-help.htm#basic-commands>Basic Commands</a></li>
+                    <li>2: <a href=super-duckhunt-help.htm#how-the-game-works>How The Game Works</a></li>
+                    <li>3: <a href=super-duckhunt-help.htm#shopping-for-items>Shopping for Items</a></li>
+                    <li>4: <a href=super-duckhunt-help.htm#gun-info>Gun Info, Stats & Upgrades</a></li>
+                    <li>5: <a href=super-duckhunt-help.htm#viewing-your-stats>Viewing Your Stats</a></li>
+                    <li>6: <a href=super-duckhunt-help.htm#in-game-rules-regulations>In Game "Rules & Regulations"</a></li>
+                    <li>7: <a href=super-duckhunt-help.htm#about-super-duckhunt>About Super DuckHunt</a></li>
+                </ul>
     <br>
     <p align=center>
     <span style="color:#00AA00"><b>RESOURCES</b></span>
     </p>
     1: <a href="https://github.com/m0de-60/super-duckhunt-bot/blob/main/LICENSE">GNU License Information</a>
     <br>
-    2: Source Code (COMING SOON)
+    2: <a href="https://github.com/m0de-60/super-duckhunt-bot">Source Code (Download)</a>
     <br>
-    3: Modifier's Guide (COMING SOON)
     <br>
     <br>
     <br><br>
@@ -462,76 +459,78 @@ a:active {
          <br>
          These commands are accessible to botmasters and admins.<br>
          <br>
-         <li>!duckhunt on/off<br>Turn DuckHunt ON or OFF</li>
+         <li><span style="color:#DD8800"><b>!duckhunt on/off</b></span><br>Turn DuckHunt ON or OFF</li>
          <br>
-         <li>!spawnduck<br>Spawns a random duck in chat</li>
+         <li><span style="color:#DD8800"><b>!spawnduck</b></span><br>Spawns a random duck in chat</li>
          <br>
-         <li>!spawnduck golden<br>Spawns a golden duck in chat</li>
+         <li><span style="color:#DD8800"><b>!spawnduck golden</b></span><br>Spawns a golden duck in chat</li>
          <br>
-         <li>!spawnduck normal<br>Spawns a normal duck in chat</li>
+         <li><span style="color:#DD8800"><b>!spawnduck normal</b></span><br>Spawns a normal duck in chat</li>
          <br>
-         <li>!rearm<br>Rearm yourself</li>
+         <li><span style="color:#DD8800"><b>!rearm</b></span><br>Rearm yourself</li>
          <br>
-         <li>!rearm username<br>Rearm specified user</li>
+         <li><span style="color:#DD8800"><b>!rearm username</b></span><br>Rearm specified user</li>
          <br>
-         <li>!rearm all<br>Return all confiscated guns</li>
+         <li><span style="color:#DD8800"><b>!rearm all</b></span><br>Return all confiscated guns</li>
          <br>
-         <li>!flood<br>Flood control override</li>
+         <li><span style="color:#DD8800"><b>!disarm username</b></span><br>Confiscate username's gun (v1.1.4 only)</li>
          <br>
-         <li>/msg botname duckstats<br>View your stats</li>
+         <li><span style="color:#DD8800"><b>!flood</b></span><br>Flood control override</li>
          <br>
-         <li>/msg botname duckstats username<br>View another player's stats</li>
+         <li><span style="color:#DD8800"><b>/msg botname duckstats</b></span><br>View your stats</li>
          <br>
-         <li>/msg botname spawnduck<br>Spawns a random duck in chat</li>
+         <li><span style="color:#DD8800"><b>/msg botname duckstats username</b></span><br>View another player's stats</li>
          <br>
-         <li>/msg botname spawnduck normal<br>Spawns a normal duck in chat</li>
+         <li><span style="color:#DD8800"><b>/msg botname spawnduck</b></span><br>Spawns a random duck in chat</li>
          <br>
-         <li>/msg botname spawnduck golden<br>Spawns a golden duck in chat</li>
+         <li><span style="color:#DD8800"><b>/msg botname spawnduck normal</b></span><br>Spawns a normal duck in chat</li>
          <br>
-         <li>/msg botname add ignore username<br>Adds username to the ignore list</li>
+         <li><span style="color:#DD8800"><b>/msg botname spawnduck golden</b></span><br>Spawns a golden duck in chat</li>
          <br>
-         <li>/msg botname del ignore username<br>Remove username from the ignore list</li>
+         <li><span style="color:#DD8800"><b>/msg botname add ignore username</b></span><br>Adds username to the ignore list</li>
+         <br>
+         <li><span style="color:#DD8800"><b>/msg botname del ignore username</b></span><br>Remove username from the ignore list</b></li>
          <br>
          <span style="color:#DD8800"><b>[Botmaster Commands]</b></span><br>
          <br>
          These commands are available to botmasters only.<br> This section also includes the <a href="duckhunt1-1-0-operators-guide.htm#configuration">configuration commands</a>, <a href="duckhunt1-1-0-operators-guide.htm#bot-maint-and-reset">maintenance and reset functions</a><br>
          <br>
-         <li>!exit<br>Shut down the bot</li>
+         <li><span style="color:#DD8800"><b>!exit</b></span><br>Shut down the bot</li>
          <br>
-         <li>/msg botname duckhunt on/off<br>Turn DuckHunt ON or OFF</li>
+         <li><span style="color:#DD8800"><b>/msg botname duckhunt on/off</b></span><br>Turn DuckHunt ON or OFF</li>
          <br>
-         <li>/msg botname do<br>
+         <li><span style="color:#DD8800"><b>/msg botname do</b></span><br>
          This command sends raw IRC commands thru the bot.<br>
          Example: /msg botname PRIVMSG #duckhunt :Hello everyone!<br>
          </li>
          <br>
-         <li>/msg botname add<br></li>
-         <li>/msg botname del<br></li>
+         <li><span style="color:#DD8800"><b>/msg botname add</b></span><br></li>
+         <li><span style="color:#DD8800"><b>/msg botname del</b></span><br></li>
          <br>
          <ul>
-         <li>/msg botname add admin username<br>Add username to admin list. Remove the user from other lists first.</li>
+         <li><span style="color:#DD8800"><b>/msg botname add admin username</b></span><br>Add username to admin list. Remove the user from other lists first.</li>
          <br>
-         <li>/msg botname del admin username<br>Remove username from admin list.</li>
+         <li><span style="color:#DD8800"><b>/msg botname del admin username</b></span><br>Remove username from admin list.</li>
          <br>
-         <li>/msg botname add botmaster username<br>Add username to botmaster list. Remove the user from other lists first.</li>
+         <li><span style="color:#DD8800"><b>/msg botname add botmaster username</b></span><br>Add username to botmaster list. Remove the user from other lists first.</li>
          <br>
-         <li>/msg botname del botmaster username<br>Remove username from botmaster list. Cannot remove yourself, and there must always be 1 botmaster listed at all times.</li>
+         <li><span style="color:#DD8800"><b>/msg botname del botmaster username</b></span><br>Remove username from botmaster list. Cannot remove yourself, and there must always be 1 botmaster listed at all times.</li>
          </ul>
          <br>
-         <li>/msg botname rules - See <a href="duckhunt1-1-0-operators-guide.htm#configuration">Configuration</a> for more info on these commands.</li>
+         <li><span style="color:#DD8800"><b>/msg botname rules</b></span> - See <a href="duckhunt1-1-0-operators-guide.htm#configuration">Configuration</a> for more info on these commands.</li>
          <br>
          <ul>
-         <li>/msg botname rules infammo on/off<br>Turn infinite ammo ON or OFF. Users will have infinite bread loafs and/or ammo magazines.</li>
+         <li><span style="color:#DD8800"><b>/msg botname rules infammo on/off</b></span><br>Turn infinite ammo ON or OFF. Users will have infinite bread loafs and/or ammo magazines.</li>
          <br>
-         <li>/msg botname rules gunconf on/off<br>Turn gun confiscation ON or OFF.</li>
+         <li><span style="color:#DD8800"><b>/msg botname rules gunconf on/off</b></span><br>Turn gun confiscation ON or OFF.</li>
          <br>
-         <li>/msg botname rules bang on/off<br>Turns !bang, !reload and other related functions ON or OFF.</li>
+         <li><span style="color:#DD8800"><b>/msg botname rules bang on/off</b></span><br>Turns !bang, !reload and other related functions ON or OFF.</li>
          <br>
-         <li>/msg botname rules bef on/off<br>Turns !bef, !bread and other related functions ON or OFF.</li>
+         <li><span style="color:#DD8800"><b>/msg botname rules bef on/off</b></span><br>Turns !bef, !bread and other related functions ON or OFF.</li>
          <br>
-         <li>/msg botname rules gunricochet 0-100<br> Setting to 0 disables bullet ricochets. 1-100 for the percentage of misses that will ricochet. (Recommend 5)</li>
+         <li><span style="color:#DD8800"><b>/msg botname rules gunricochet 0-100</b></span><br> Setting to 0 disables bullet ricochets. 1-100 for the percentage of misses that will ricochet. (Recommend 5)</li>
          <br>
-         <li>/msg botname rules thebushes 0-100<br> Setting to 0 disables searching in the bushes. 1-100 for the percentage of items found while searching the bushes after shooting a duck. (Recommend 15)</li>
+         <li><span style="color:#DD8800"><b>/msg botname rules thebushes 0-100</b></span><br> Setting to 0 disables searching in the bushes. 1-100 for the percentage of items found while searching the bushes after shooting a duck. (Recommend 15)</li>
          <br>
          </ul>
          <li>/msg botname set - See <a href="duckhunt1-1-0-operators-guide.htm#configuration">Configuration</a> for more info on these commands.</li>
