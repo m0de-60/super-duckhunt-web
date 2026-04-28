@@ -87,9 +87,15 @@ a:active {
                     <li>5: <a href=super-duckhunt-help.htm#viewing-your-stats>Viewing Your Stats</a></li>
                     <li>6: <a href=super-duckhunt-help.htm#in-game-rules-regulations>In Game "Rules & Regulations"</a></li>
                     <li>7: <a href=super-duckhunt-help.htm#about-super-duckhunt>About Super DuckHunt</a></li>
-                    <li>8: <a href=duckhunt1-1-0-operators-guide.htm>Operator's Guide (Botmaster & Admin)</a></li>
-                    <li>9: <a href="https://github.com/m0de-60/super-duckhunt-bot/blob/main/LICENSE">GNU License Information</a></li>
-                    <li>10: <a href="https://github.com/m0de-60/super-duckhunt-bot">Source Code (Download)</a></li>
+                    <li>8: Operator's Guide (Botmaster & Admin)
+					<br>&rarrhk; <a href=duckhunt1-1-0-operators-guide.htm>VERSIONS 1.0.0 TO v1.1.4</a>
+					<br>&rarrhk; VERSIONS 1.9.9+</li>
+                    <li>9: GNU License Information
+					<br>&rarrhk; <a href="https://github.com/m0de-60/super-duckhunt-bot/blob/main/LICENSE">VERSION 1.1.4</a>
+					<br>&rarrhk; <a href="https://github.com/m0de-60/super-duckhunt/blob/main/LICENSE">VERSION 1.1.9</a></li>
+                    <li>10: Source Code (Download)
+					<br>&rarrhk; <a href="https://github.com/m0de-60/super-duckhunt-bot">VERSION 1.1.4</a>
+					<br>&rarrhk; <a href="https://github.com/m0de-60/super-duckhunt">VERSION 1.9.9</a></li>
                 </ul>
                 <br><br>
                 <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -116,6 +122,10 @@ a:active {
                     <li><span style="color:#888888"><b>!topduck</span></b> - top 5 best players<br></li>
                     <li><span style="color:#888888"><b>!lastduck</span></b> - check when the last duck was seen<br> </li>
                     <li><span style="color:#888888"><b>!tshot</span></b> - total successful shots of all players.<br></li>
+					<li><span style="color:#888888"><b>!totals</span></b> - total successful shots and feedings of all players. <span style="color:#990000">(version 1.9.9+)</span><br></li>
+					<li><span style="color:#888888"><b>!daily</span></b> - daily successful shots and feedings of all players. <span style="color:#990000">(version 1.9.9+)</span><br></li>
+					<li><span style="color:#888888"><b>!weekly</span></b> - weekly successful shots and feedings of all players. <span style="color:#990000">(version 1.9.9+)</span><br></li>
+					<li><span style="color:#888888"><b>!monthly</span></b> - monthly successful shots and feedings of all players. <span style="color:#990000">(version 1.9.9+)</span><br></li>
                 </span> </span> </ul>
                 </p>
                 <p><span style="color:#2277EE"><b>
@@ -146,8 +156,9 @@ a:active {
                  <span style="color:#DDDD00"><b>[DUCKS & GOLDEN DUCKS]<br></span></b>
                  <ul>
                      <span style="color:#009900">
-                 <li>A duck is worth 15 xp</li>
-                 <li>A golden duck is worth 3x the duck xp (45xp)</li>
+                 <li>A normal duck is worth 15 xp</li>
+                 <li><span style="color:#990000">(version 1.0.0 to 1.1.4)</span> A golden duck is worth 3x the duck xp (45xp)</li>
+				 <li><span style="color:#990000">(version 1.9.9+)</span> A golden duck's xp varies. The harder the duck is, the more xp. Up to 15x the duck xp.</li>
                      </span>
                  </ul>
                  <span style="color:#DDDD00"><b>[JAMS & RELOADING]<br></span></b> <br>
@@ -281,6 +292,12 @@ a:active {
 <li>24 - Additional Magazine (75-100xp)- Increases the total amount of magazines you can carry by 1. Max 5.<br>
         <span style="color:#888888"><b>USE: !shop 24</li></span></b>
         <br>
+<li>25 - Camping Permit (1000-2000xp) <span style="color:#990000">(version 1.9.9+)</span> - Allows player to hunt and/or feed unlimited ducks for 8 hours.<br>
+		<span style="color:#888888"><b>USE: !shop 25</li></span></b>
+		<br>
+<li>26 - Coffee (100-300xp) <span style="color:#990000">(version 1.9.9+)</span> - Reduces player fatigue by up to 50% and removes fatigued effect.<br>
+		<span style="color:#888888"><b>USE: !shop 26</li></span></b>
+		<br>
 </li>
 </li>
 </ul>
@@ -331,7 +348,7 @@ a:active {
                 <br>
                 If your gun gets confiscated, there are a few ways to get it back.<br>
                 <ul>
-                    <li>All confiscated guns are silently returned after the following duck is shot.</li>
+                    <li>All confiscated guns are silently returned after the following duck is shot by another player.</li>
                     <li>Asking a Botmaster or Admin to !rearm you</li>
                     <li>Use !shop 5 to repurchase a confiscated gun (30xp)</li>
                 </ul>
@@ -345,9 +362,11 @@ a:active {
                 <span style="color:#888888"><b>* This IRC Bot sends NOTICES, make sure you do not have NOTICES blocked in your client.</b></span><br>
                 <br>
                 <span style="color:#888888"><b>* Use !duckstats to view your stats.</span></b><br>
-                [15:44:03] -DuckHunt- [DuckStats: Neo_Nemesis] [SCORE] Best Time: 0.67 | Level: 15 | xp: 14000 | Ducks: 301 | Golden Ducks: 102 | Befriended Ducks: 188 | Accidents: 212 [GUN STATS] Status: OK | Rounds: 10/12 | Magazines: 5/5 | Accuracy: 100% | Current Reliability: 99.02% | Max Reliability: 100%<br>
-                [15:44:03] -DuckHunt- [BREAD BOX] Bread Pieces: 7/12 | Loaf: 2/3 [EFFECTS] None<br>
-                [15:44:03] -DuckHunt- [HUNTING BAG] Gun Lock [6] | Sunglasses | Rain Coat | Explosive Ammo [22] | Bag of Popcorn [40]<br>
+                [23:06:19] -DuckHunt- [DuckStats: Neo_Nemesis]  Best Time: 0.21 | Level: 57 | xp: 5119709 | Fatigue: 55% | Ducks: 7830 | Golden Ducks: 4263 | Befriended Ducks: 2360 | Accidents: 2619<br>
+				[23:06:19] -DuckHunt- [GUN STATS] Status: OK | Rounds: 11/12 | Magazines: 2/5 | Accuracy: 100% | Current Reliability: 99.78% | Max Reliability: 100%<br>
+				[23:06:19] -DuckHunt- [BREAD BOX] Bread Pieces: 9/12 | Loaf: 0/3<br>
+				[23:06:19] -DuckHunt- [EFFECTS] None<br>
+				[23:06:19] -DuckHunt- [HUNTING BAG] Gun Grease | Explosive Ammo [45] | Bag of Popcorn [5]<br>
 
                 <br>
                 These are your stats.<br>
@@ -356,6 +375,7 @@ a:active {
                 <li>Best Time: fastest shot</li>
                 <li>Level: current hunter level</li>
                 <li>xp: total experience points</li>
+				<li>Fatigue: <span style="color:#990000">(version 1.9.9+)</span> total amount of fatigue</li>
                 <li>Ducks: total ducks shot</li>
                 <li>Golden Ducks: total golden ducks shot</li>
                 <li>Befriended Ducks: total befriended ducks</li>
@@ -397,19 +417,26 @@ a:active {
                     Explosive Ammo - better accuracy for all ducks and -2 Life to golden ducks for 50 rounds<br>
                     <br>
                     Popcorn - better luck befriending all ducks and +2 Friend to golden ducks for 50 pieces<br>
+					<br>
+					Camping Permit - <span style="color:#990000">(version 1.9.9+)</span> allows unlimited hunting and feeding of ducks for 8 hours with no illegal camping penalties.<br>
                     </li>
                 </ul>
                 <span style="color:#DDDD00"><b>[EFFECTS]<br></span></b>
                 <ul>
                     <li>This will list any effects currently inflicted on the player.</li>
                     <li>Possible Effects:<br><br>
-                    Bedazzled - You are blinded, meaning you will miss 99% of your shots for 1 hour - use !shop 13 to remove status<br>
+                    Bedazzled - You are blinded, meaning you will miss 99% of your shots for 1 hour - use !shop 13 to remove status effect<br>
                     <br>
-                    Soggy - Your clothes are wet and soggy, you will not be able to hunt for 1 hour - use !shop 12 to remove status<br>
+                    Soggy - Your clothes are wet and soggy, you will not be able to hunt for 1 hour - use !shop 12 to remove status effect<br>
                     <br>
                     Sabotage - Your gun is sabotaged (1 turn)<br>
                     <br>
-                    Bombed - You have been duck bombed, your clothes are crusty and filthy. You cannot hunt until you are clean. - use !shop 12 to remove status.<br>
+                    Bombed - You have been duck bombed, your clothes are crusty and filthy. You cannot hunt until you are clean. - use !shop 12 to remove status effect.<br>
+					<br>
+					Illegal Camping - <span style="color:#990000">(version 1.9.9+)</span> You have shot too many ducks in a short period of time. You cannot hunt or feed ducks for 2 hours. - use !shop 25 to remove status effect.<br>
+					<br>
+					Fatigued - <span style="color:#990000">(version 1.9.9+)</span> You have exhausted yourself and must rest for 6 hours. - use !shop 26 to remove status effect.<br>
+					<br>
                     </li>
                 </ul>
                 </p>
@@ -456,6 +483,18 @@ a:active {
                   By default this rule is turned off. If this rule is active, players will only be able to hunt and shoot ducks. All befriending items and commands are disabled.
                   Players will only be able to use a reduced shop menu and function set containing items for gameplay that involves hunting and shooting ducks.<br>
                   <br>
+				  <span style="color:#DDDD00"><b>[Camping Permits/Free Camping] <span style="color:#990000">(version 1.9.9+)</span><br></span></b><br>
+				  By default this rule is set to require players to buy camping permits to hunt or feed ducks for extended periods of time. Without purchasing a camping permit from the
+				  shop players might get penalized if they shoot or feed too many ducks within a certain window of time. Buying a camping permit prevents illegal camping penalties for
+				  8 hours. If a player does get an illegal camping penalty, they can still buy a camping permit, at a higher price, to remove the penalty and continue hunting or feeding
+				  ducks.<br>
+				  <br>
+				  <span style="color:#DDDD00"><b>[Fatigue] <span style="color:#990000">(version 1.9.9+)</span><br></span></b><br>
+				  By default this rule is turned on. If this rule is active, every time a player shoots at or tosses bread at a duck, their fatigue will slowly rise. Once fatigue gets above
+				  90% shots and tosses will start to miss the duck, and if the player continues until 100+% fatigue is reached, the player will collapse from exhaustion and have to rest for 
+				  6 hours before being able to hunt or feed ducks again. Purchasing coffee from the shop reduces fatigue. If a player has collapsed from exhaustion they may still buy a coffee
+				  from the shop, for a higher fee, to remove the status effect and continue hunting or feeding ducks.<br>
+				  <br>
                   <span style="color:#2277EE"><b>
                       <a name='about-super-duckhunt'></a>
                 ----------------------------------------------------------------<br>
@@ -465,8 +504,8 @@ a:active {
                 DuckHunt is FREE and OPEN SOURCE<br>
                 <br>
                 Super DuckHunt is a python IRC Bot game based on the NES Game Duck Hunt. Written by Neo_Nemesis. This script is based on the original <a href="https://www.tclscripts.net/product/duckhunt/">DuckHunt IRC bot written by Menz Agitat</a>. The original game was
-                inspired by the NES classic Duck Hunt, and is completely re-written in a new language. This is not a copy or sequel of the original DuckHunt IRC Bot or the NES game, but a tribute to the age of old Nintendo and game consoles.
-                experience. <br>
+                inspired by the NES classic Duck Hunt, and is completely re-written in a new language. This is not a copy, port or sequel of the original DuckHunt IRC Bot or the NES game, but a tribute to the age of old Nintendo and game consoles.
+                experience and a tribute to the work done by MenzAgitat with the original IRC DuckHunt game. <br>
                 <br>
                 <a href="https://boulets.eggdrop.fr/tcl/scripts/Duck_Hunt.html">Official Menz Agitat DuckHunt Page (French)</a><br>
                 <br>
@@ -475,7 +514,7 @@ a:active {
                 There is also a version of Super DuckHunt written in <a href="https://www.autoitscript.com/site/">Autoit</a>, also by Neo_Nemesis. It is, as of yet, ultra beta unreleased. Plans to continue on this platform are being considered.<br>
                 <br>
                  <span style="color:#DDDD00"><b>[CREDITS]<br></span></b><br>
-                OG Beta testers: <br> End3r, ComputerTech, TheFatherMind, foxy, wez, KnownSyntax, aaabbb, D3M0N<br>
+                OG and official Beta testers: <br> ScifiSpirit, ADMIRAL_HUBRIS, End3r, ComputerTech, TheFatherMind, foxy, wez, KnownSyntax, aaabbb, D3M0N<br>
         <br>
                 On the first launch run of Super DuckHunt (version 1.0.0 to 1.0.5) on Freenode (Jan 1, 2024 to Jan 25, 2024):
         <br>
@@ -484,12 +523,24 @@ a:active {
         Top Ducks: aaabbb 48885 xp | hurricanetornado 16526 xp | neo`nemesis 13058 xp | guest29438 11765 xp | l0g 11756 xp<br>
                 <br>
                 Contributors (contributed by information and suggestions/requests):<br>
-                TheFatherMind, ComputerTech, End3r, foxy, KnownSyntax, aaabbb, mrinfinity, bildramer, Namelesswonder, vurtual_, Friithian<br>
+                ScifiSpirit, k4k0, MenzAgitat, TheFatherMind, ComputerTech, End3r, foxy, KnownSyntax, aaabbb, mrinfinity, bildramer, Namelesswonder, vurtual_, Friithian<br>
                 <br>
                 Thanks to:<br>
-                To Freenode IRC Network, Rizon IRC Network, EsperNet IRC Network, all the beta testers and contributors.<br>
+				<br>
+				A very special thanks to MenzAgitat, who one day in 2025 found Super DuckHunt through a web search and came to my channel to check it out! MenzAgitat has been a well of DuckHunt knowledge and has given me great advice
+				and pointers on newer versions and ideas of Super DuckHunt.<br>
+				<br>
+				To ScifiSpirit, who has been my main guy in the development of Super DuckHunt especially in version 1.9.9. He has stuck around and continued to help me test features and give ideas and advice. Thanks a lot!<br>
+				<br>
+				To End3r, who is a great friend and a cool guy. He has helped me greatly by inspiring to me to write a DuckHunt bot in Python as well as helping support the cause, giving me ideas and allowing me free roam on many of his VPS's to use
+				for development, testing and running Super DuckHunt.<br>
+				<br>
+                To Freenode IRC Network, Rizon IRC Network, EsperNet IRC Network, Sorcery IRC Network, all the beta testers and contributors.<br>
+				<br>
                 To all the players who've played and continue to play and the enjoy the game.<br>
+				<br>
                 To all the people who've used and continue to use this bot and source code all over the world.<br>
+				<br>
                  There have been so many people already its impossible to list them all! Thanks to everyone!<br>
             <ul>
     </ul>
@@ -502,13 +553,15 @@ a:active {
                 <ul>
                     <li>Author: Mode60/Neo Nemesis</li>
                     <br>
-                    <li><a href="https://github.com/m0de-60/super-duckhunt-bot">Current Version: 1.1.4 Final</a></li>
+                    <li><a href="https://github.com/m0de-60/super-duckhunt-bot">Current Stable Version: v1.1.4 Final</a></li>
+					<br>
+					<li><a href="https://github.com/m0de-60/super-duckhunt-bot">Current Beta Version: v1.9.9</a></li>
                     <br>
                     <li><a href="https://www.python.org/downloads/release/python-3120/">Python 3.12.0</a> 'PyDuck' (Win/Linux/Eggdrop)</li>
                </ul>
                <p align='center'>CONTRIBUTORS AND THANKS TO:</p>
-               <p>End3r, ComputerTech, TheFatherMind, foxy, bildramer, Namelesswonder, vurtual_,
-               Friithian, <a href="https://freenode.net/">Freenode IRC network</a> and <a href="https://rizon.net/">Rizon IRC network</a>.<br>
+               <p>ScifiSpirit, MenzAgitat, k4k0, End3r, ComputerTech, TheFatherMind, foxy, bildramer, Namelesswonder, vurtual_,
+               Friithian, <a href="https://sorcery.net/">Sorcery IRC network</a>, <a href="https://freenode.net/">Freenode IRC network</a> and <a href="https://rizon.net/">Rizon IRC network</a>.<br>
                <br>
                Built on Windows with <a href="https://www.jetbrains.com/pycharm/download/?section=windows">PyCharm Community Edition</a> Python IDE by JetBrains
                         <br> <br> <br>
