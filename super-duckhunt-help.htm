@@ -121,6 +121,7 @@ a:active {
                     <li><span style="color:#888888"><b>!shop [id]</span></b> - purchase item<br> </li>
                     <li><span style="color:#888888"><b>!topduck</span></b> - top 5 best players<br></li>
                     <li><span style="color:#888888"><b>!lastduck</span></b> - check when the last duck was seen<br> </li>
+					<li><span style="color:#888888"><b>!rules</span></b> - view current game settings. See: <a href=super-duckhunt-help.htm#in-game-rules-regulations>In Game "Rules & Regulations"</a><br></li>
                     <li><span style="color:#888888"><b>!tshot</span></b> - total successful shots of all players.<br></li>
 					<li><span style="color:#888888"><b>!totals</span></b> - total successful shots and feedings of all players. <span style="color:#990000">(version 1.9.9+)</span><br></li>
 					<li><span style="color:#888888"><b>!daily</span></b> - daily successful shots and feedings of all players. <span style="color:#990000">(version 1.9.9+)</span><br></li>
@@ -159,6 +160,7 @@ a:active {
                  <li>A normal duck is worth 15 xp</li>
                  <li><span style="color:#990000">(version 1.0.0 to 1.1.4)</span> A golden duck is worth 3x the duck xp (45xp)</li>
 				 <li><span style="color:#990000">(version 1.9.9+)</span> A golden duck's xp varies. The harder the duck is, the more xp. Up to 15x the duck xp.</li>
+				 <li><span style="color:#990000">(version 1.9.9+)</span> For every !bang and !bef, fatigue will rise 1%. Every normal duck shot or befriended, fatigue will rise 1%. Every golden duck shot or befriended, fatigue will rise by 2%.</li>
                      </span>
                  </ul>
                  <span style="color:#DDDD00"><b>[JAMS & RELOADING]<br></span></b> <br>
@@ -313,6 +315,9 @@ a:active {
                      <br>
                 Best results: Build your max reliability to 90% or higher (2+ upgrades), then clean it regularly around 73%, and use the gun grease after cleaning.<br>
                 <br>
+				<span style="color:#990000">(version 1.9.9+)</span> Everytime you fire your gun, your fatigue rises by 1%. Every normal duck shot fatigue gains an additional 1%. Every golden
+				shot fatigue gains an additional 2%.
+				<br>
                 <br>
                 <span style="color:#DDDD00"><b>[STARTING AS A NEW PLAYER]<br></span></b>
                      <br>
@@ -435,7 +440,7 @@ a:active {
 					<br>
 					Illegal Camping - <span style="color:#990000">(version 1.9.9+)</span> You have shot too many ducks in a short period of time. You cannot hunt or feed ducks for 2 hours. - use !shop 25 to remove status effect.<br>
 					<br>
-					Fatigued - <span style="color:#990000">(version 1.9.9+)</span> You have exhausted yourself and must rest for 6 hours. - use !shop 26 to remove status effect.<br>
+					Fatigued - <span style="color:#990000">(version 1.9.9+)</span> You have exhausted yourself and must rest for 2 hours. - use !shop 26 to remove status effect.<br>
 					<br>
                     </li>
                 </ul>
@@ -484,15 +489,16 @@ a:active {
                   Players will only be able to use a reduced shop menu and function set containing items for gameplay that involves hunting and shooting ducks.<br>
                   <br>
 				  <span style="color:#DDDD00"><b>[Camping Permits/Free Camping] <span style="color:#990000">(version 1.9.9+)</span><br></span></b><br>
-				  By default this rule is set to require players to buy camping permits to hunt or feed ducks for extended periods of time. Without purchasing a camping permit from the
+				  By default this rule is set to require players to buy camping permits to hunt or feed ducks for extended periods of time. Default setting is 15 ducks in 2 hours. Without purchasing a camping permit from the
 				  shop players might get penalized if they shoot or feed too many ducks within a certain window of time. Buying a camping permit prevents illegal camping penalties for
 				  8 hours. If a player does get an illegal camping penalty, they can still buy a camping permit, at a higher price, to remove the penalty and continue hunting or feeding
 				  ducks.<br>
 				  <br>
 				  <span style="color:#DDDD00"><b>[Fatigue] <span style="color:#990000">(version 1.9.9+)</span><br></span></b><br>
-				  By default this rule is turned on. If this rule is active, every time a player shoots at or tosses bread at a duck, their fatigue will slowly rise. Once fatigue gets above
-				  90% shots and tosses will start to miss the duck, and if the player continues until 100+% fatigue is reached, the player will collapse from exhaustion and have to rest for 
-				  6 hours before being able to hunt or feed ducks again. Purchasing coffee from the shop reduces fatigue. If a player has collapsed from exhaustion they may still buy a coffee
+				  By default this rule is turned on. If this rule is active, every time a player shoots at or tosses bread at a duck, their fatigue will slowly rise by 1%. Every time a player successfully shoots or befriends
+				  a duck, fatigue will rise an additional 1% for normal ducks and 2% for golden ducks. Once fatigue gets above
+				  80% shots and tosses will start to miss the duck and cause xp deductions, and if the player continues until 100+% fatigue is reached, the player will collapse from exhaustion and have to rest for 
+				  2 hours before being able to hunt or feed ducks again. Purchasing coffee from the shop reduces fatigue. If a player has collapsed from exhaustion they may still buy a coffee
 				  from the shop, for a higher fee, to remove the status effect and continue hunting or feeding ducks.<br>
 				  <br>
                   <span style="color:#2277EE"><b>
