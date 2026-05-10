@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Super-DuckHunt Help & Resources
+    </title>
+    <style>
+    .bold {
+        font-weight: bold;
+    }
+    .norm {
+        font-weight: normal;
+    }
+
+    </style>
+    <style type="text/css">
+    .scroller {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    padding: 10px
+    <!-- border: 1px solid; -->
+
+    }
+    </style>
+    <style>
+a:link {
+    color: #55CDEE;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #55CDEE;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FF789A;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #55CDEE;
+    background-color: transparent;
+    text-decoration: underline;
+}
+</style>
+    </head>
+    <body>
+<body style="background-color:#000000;">
+<span style="font-family: courier, monospace;">
+<span style="font-size: 11pt">
+<span style="color:#CBCBCB">
+
+<p align='center'><img src='https://github.com/m0de-60/super-duckhunt-web/blob/main/super-duckhunt-img.png?raw=true'></p>
+<p align='center'>
+    <span style="color:#EF1212">
+    <b>version 1.9.9+ OPERATOR'S GUIDE</b>
+    <br>
+    [Linux/Win/Mac zCore Plugin Module]
+    </span>
+</p>
+<table border=1 height="100%" width="100%" cellspacing="5">
+    <tr>
+    <td Width="20%">
+    <p class="normal" align='center'>
+    <span style="color:#00AA00"><b>INDEX</b></span><br>
+    <br>
+    <a href="super-duckhunt-help.htm">Return to User Help Page</a>
+    </p>
+    <p align='left'>
+        1: <a href=duckhunt1-1-0-operators-guide.htm#setting-up-the-bot>Setting up the bot</a><br>
+        2: <a href=duckhunt1-1-0-operators-guide.htm#configuration>Configuration</a><br>
+        3: <a href=duckhunt1-1-0-operators-guide.htm#bot-maint-and-reset>Resetting the game</a><br>
+        4: <a href=duckhunt1-1-0-operators-guide.htm#botmaster-admin-commands>Botmaster and Admin Commands</a><br>
+    <p align=center>
+    <span style="color:#00AA00"><b>USER HELP ARTICLES</b></span>
+    </p>
+<ul>
+                    <li>1: <a href=super-duckhunt-help.htm#basic-commands>Basic Commands</a></li>
+                    <li>2: <a href=super-duckhunt-help.htm#how-the-game-works>How The Game Works</a></li>
+                    <li>3: <a href=super-duckhunt-help.htm#shopping-for-items>Shopping for Items</a></li>
+                    <li>4: <a href=super-duckhunt-help.htm#gun-info>Gun Info, Stats & Upgrades</a></li>
+                    <li>5: <a href=super-duckhunt-help.htm#viewing-your-stats>Viewing Your Stats</a></li>
+                    <li>6: <a href=super-duckhunt-help.htm#in-game-rules-regulations>In Game "Rules & Regulations"</a></li>
+                    <li>7: <a href=super-duckhunt-help.htm#about-super-duckhunt>About Super DuckHunt</a></li>
+                </ul>
+    <br>
+    <p align=center>
+    <span style="color:#00AA00"><b>RESOURCES</b></span>
+    </p>
+    1: <a href="https://github.com/m0de-60/super-duckhunt/blob/main/LICENSE">GNU License Information</a>
+    <br>
+    2: <a href="https://github.com/m0de-60/super-duckhunt">Source Code (Download)</a>
+    <br>
+    <br>
+    <br>
+    <br><br>
+    <br>
+    <br><br>
+    <br>
+    <br>
+    </p>
+    </td>
+    <td Width=80% >
+        <div class='scroller'>
+<p align='left'>
+        <span style="color:#DD8800"><b>
+            <span style="font-size: 13pt">
+                <a name='setting-up-the-bot'></a>
+        --------------------------------------------------------------<br>
+        1. Setting up the bot<br>
+        --------------------------------------------------------------<br>
+            </span>
+        </b></span>
+    <span style="font-size: 10pt">
+    <ul>
+        <span style="color:#DD1111"><b>This bot requires <a href="https://www.python.org/downloads/release/python-3120/">Python version 3.12.0</a> to be installed on the running machine.</b></span><br>
+        <br>
+		<span style="color:#DD1111"><b>This bot is a plugin module for <a href="https://https://github.com/m0de-60/zcore">zCore IRC Bot</a><br></span></b><br>
+		<li align='left'> zCore must be installed as this version of DuckHunt is a plugin for zCore. <a href="https://m0de-60.github.io/web/zcore.htm">Click here to learn more about zCore.</a></li>
+        <br>
+		<span style="color:#DD8800"><b>Changing the username, password, and adding servers and channels must be done through zCore configuration, as well as adding the server instance and channel names to duckhunt.cnf.</b></span><br>
+        <br>
+		<li align='left'> Install the REQUIRED PLUGIN FILES into your zCore folder, and add proper configuration to zCore.cnf<br>
+		REQUIRED PLUGIN FILES: duckhunt.py, duckhunt.cnf<br>
+		<a href="https://m0de-60.github.io/web/zcore.htm#plugin-modules">Click here for instructions on how to add this module into your zCore configuration.</a><br>
+        <br>
+        <li align='left'>Don't run the bot yet. (Shut it down, if it is running)</li>
+        <br>
+        <li align='left'>Open duckhunt.cnf with a text editor</li>
+        <ul align='left'>
+            <br>
+			<li align='left'><span style="color:#DD8800"><b>[duckhunt]</b></span></li>
+			<li align='left'><span style="color:#DD8800"><b>serverlist =</b></span> input all the servers you wish to run Super DuckHunt on, separated by commas, no spaces.
+			<br><br>
+			<li align='left'><span style="color:#DD8800"><b>[servername]</b></span></li>
+			<li align='left'><span style="color:#DD8800"><b>channels =</b></span> input all the chanels you wish to run SuperDuckHunt in, on for that server.
+			<br><br>
+			<b><span style="color:#DD1111">EXAMPLE:</span></b><br>
+			[duckhunt]<br>
+			serverlist = server1,server2,etc<br>
+			<br>
+			[server1]<br>
+			channels = #channel1,#channel2,etc<br>
+			<br>
+			[server2]<br>
+			channels = #channel1,#channel2,etc<br>
+			<br></li>
+			<li><b><span style="color:#DD1111">NOTE:</b></span> server1 etc must also be listed in zcore.cnf</li>
+			<li><b><span style="color:#DD1111">NOTE:</b></span> #channel1 etc must also be listed in zcore.cnf</li>
+			
+            <b>This is all the configuration you need to input. Do not manually alter any other settings in the configuration files.</b>
+        </ul><br>
+        <li align='left'>Save duckhunt.cnf and close the file.</li>
+        <br>
+        The module is now ready. It can be run on Windows, Linux or Mac with Python. Channel specific configuration is self generated into a separate configuration files upon initial start up. <b>Do not edit these files manually</b>.
+		The module has built in configuration commands.<br>
+        <br>
+          <span style="color:#DD1111"><b>Run the module with zcore.py (python3 zcore.py)</b></span><br>
+            </ul>
+                <span style="color:#DD8800"><b>
+            <span style="font-size: 13pt">
+                <a name='configuration'></a>
+        --------------------------------------------------------------<br>
+        2. Configuration<br>
+        --------------------------------------------------------------<br>
+            </span>
+        </b></span>
+        <ul>
+        <span style="color:#DD1111">This plugin comes pre-configured with a default configuration. Once you have completed Section 1,(<a href=duckhunt1-1-0-operators-guide.htm#setting-up-the-bot>Setting up the bot</a>), the plugin is ready to go and will begin its process once it joins the specified server and chat.</span><br>
+        <br>
+        DuckHunt is pre-configured to have the game enabled from start up. To turn DuckHunt on or off, in chat use <span style="color:#DD1111"><b>!duckhunt on</b></span> or <span style="color:#DD1111"><b>!duckhunt off</b></span><br>
+        <br>
+        <span style="color:#DD1111"><b>FURTHER CONFIGURATION IS USER DEFINED.</b></span> Below you can find a description of the pre-configured default settings, and how to change them. (Advanced users)<br>
+        <br>
+    <br>
+    This plugin has the ability to change the configuration and settings live, while the bot is running. There is no need to configure or change settings of this plugin thru the configuration files,
+    and zCore will not need to be manually restarted. All changes take effect immediately.<br>
+    <br>
+    <a name='configuration-explanation'></a>
+    <span style="color:#DD8800"><b>[Configuration Explanation]</b></span><br>
+    <br>
+    The configuration commands can only be used by botmasters. The configuration of this plugin is stored in the duckhunt.cnf and server/channel specific files (duckhunt_server1_channel1.cnf). This plugin has the capability to make live changes to its configuration, and making the changes take effect quickly, if not immediately.<br>
+    <br>
+    Everything works based on time, random numbers and percentages that are set within a specified range. The various values and settings that can be configured in this plugin allow each botmaster to fine tune their DuckHunt games for their chats.<br>
+    <br>
+    <span style="color:#DD1111"><b>PLEASE NOTE:</b></span> <span style="color:#DD8800">The <a href="super-duckhunt-help.htm">Help Documentation</a> is designed to follow the stock (or pre-configured) settings. Making your own changes may cause game experience to change, based on the settings you declare. Some commands or game situations may be enabled or disabled per botmaster definition.</span><br>
+    <br>
+    <a name='core-configuration'></a>
+    <span style="color:#DD8800"><b>[Core Configuration]</b></span><br>
+    <br>
+    Core configuration values are: <a href="duckhunt1-1-0-operators-guide.htm#maxducks">maxducks</a>, <a href="duckhunt1-1-0-operators-guide.htm#spawntime">spawntime</a>, <a href="duckhunt1-1-0-operators-guide.htm#flytime">flytime</a>, <a href="duckhunt1-1-0-operators-guide.htm#duckexp">duckexp</a>,
+    <a href="duckhunt1-1-0-operators-guide.htm#duckfear">duckfear</a>, <a href="duckhunt1-1-0-operators-guide.htm#duckgold">duckgold</a>, <a href="duckhunt1-1-0-operators-guide.htm#friendrate">friendrate</a><br>
+    <br>
+    The following commands will change these values. (Pre-configured values listed)<br>
+    <br>
+    <ul>
+         <a name='maxducks'></a>
+        <span style="color:#DD8800"><b>maxducks</b></span><br>
+        <br>
+        <li><span style="color:#FFFFFF"><b>/msg botname maxducks #channel X</b></span></li>
+        <br>
+        maxducks is the maximum amount of ducks that can exist at once in the specified channel; Recommend 3-6.<br>
+        Pre-config: 6<br>
+		<br>
+		<li><span style="color:#FFFFFF"><b>/msg botname maxducks #channel view</b></span></li><br>
+		This will send a message saying what the current maxducks setting is.<br>
+        <br>
+         <a name='spawntime'></a>
+         <span style="color:#DD8800"><b>spawntime</b></span><br>
+         <br>
+         <li><span style="color:#FFFFFF"><b>/msg botname spawntime #channel X</b></span></li>
+    <br>
+         spawntime is the amount of time for a duck to spawn automatically in chat. If you wish to have multiple ducks spawn automatically in the channel, set this value lower than <a href="duckhunt1-1-0-operators-guide.htm#flytime">flytime</a>. Time value is in seconds <br>Recommend 900-1800 seconds (15-30 min)<br>
+         Pre-config: 1800 seconds<br>
+         <br>
+		<li><span style="color:#FFFFFF"><b>/msg botname spawntime #channel view</b></span></li><br>
+		This will send a message saying what the current spawntime setting is in seconds.<br>
+		<br>
+         <a name='flytime'></a>
+    <span style="color:#DD8800"><b>flytime</b></span><br>
+    <br>
+    <li><span style="color:#FFFFFF"><b>/msg botname flytime #channel X</b></span></li>
+        <br>
+    flytime is the amount of time a duck will stay in the area before flying away. If you wish you have multiple ducks spawn automatically in the channel, set this value higher than <a href="duckhunt1-1-0-operators-guide.htm#spawntime">spawntime</a>. The value is in seconds <br>Recommend 600-1500 seconds (10-25 min)<br>
+    Pre-config: 1500 seconds<br>
+    <br>
+	<li><span style="color:#FFFFFF"><b>/msg botname flytime #channel view</b></span></li><br>
+		This will send a message saying what the current flytime setting is in seconds.<br>
+		<br>
+    <a name='duckexp'></a>
+       <span style="color:#DD8800"><b>duckexp</b></span><br>
+       <br>
+        <li><span style="color:#FFFFFF"><b>/msg botname duckexp #channel X</b></span></li>
+        <br>
+        duckexp is the amount of xp a player earns for shooting down or befriending a normal duck. Golden ducks are a variable value that can be up 15 times this value. Based on game pricing<br> Recommend 15<br>
+        Pre-config: 15 xp<br>
+        <br>
+		<li><span style="color:#FFFFFF"><b>/msg botname duckexp #channel view</b></span></li><br>
+		This will send a message saying what the current duckexp setting is in xp.<br>
+		<br>
+        <a name='duckfear'></a>
+     <span style="color:#DD8800"><b>duckfear</b></span><br>
+     <br>
+     <li><span style="color:#FFFFFF"><b>/msg botname duckfear #channel X</b></span></li>
+     <br>
+     duckfear is based on a points accumulation. Points accumulate every time a player uses !bang. The lower the value, the easier it is to scare ducks<br> Recommend 45-55<br>
+     Pre-config: 50<br>
+     <br>
+	 <li><span style="color:#FFFFFF"><b>/msg botname duckfear #channel view</b></span></li><br>
+		This will send a message saying what the current duckfear setting is in fear points.<br>
+		<br>
+     <a name='duckgold'></a>
+    <span style="color:#DD8800"><b>duckgold</b></span><br>
+    <br>
+    <li><span style="color:#FFFFFF"><b>/msg botname duckgold #channel X</b></span></li>
+    <br>
+    duckgold is the number that represents what percentage of automatically spawned ducks will turn golden. 1-100<br> Recommend 30-50<br>
+    Pre-config: 40<br>
+    <br>
+	<li><span style="color:#FFFFFF"><b>/msg botname duckgold #channel view</b></span></li><br>
+		This will send a message saying what the current duckgold setting percentage is.<br>
+		<br>
+    <a name='friendrate'></a>
+    <span style="color:#DD8800"><b>friendrate</b></span><br>
+    <br>
+     <li><span style="color:#FFFFFF"><b>/msg botname friendrate #channel X</b></span></li>
+     <br>
+     friendrate is the number that represents the percentage of luck players will have befriending ducks. 1-100<br> Recommend 70-75<br>
+     Pre-config: 71<br>
+     <br>
+	 <li><span style="color:#FFFFFF"><b>/msg botname friendrate #channel view</b></span></li><br>
+		This will send a message saying what the current friendrate setting percentage is.<br>
+		<br>
+    </ul>
+    <br>
+    <a name='configuring-game-rules'></a>
+      <span style="color:#DD8800"><b>[Configuring Game Rules]</b></span><br>
+      <br>
+      The <a href=super-duckhunt-help.htm#in-game-rules-regulations>In-Game Rules and Regulations</a> can be modified to change the game experience for your channel.<br>
+	  A basic rules setting can be viewed in channel by everyone with the command <b>!rules</b><br>
+      <br>
+      <ul>
+       <span style="color:#DD8800"><b>Gun Confiscation</b></span><br>
+       <br>
+       <li><span style="color:#FFFFFF"><b>/msg botname rules #channel gunconf on</b></span></li>
+       <li><span style="color:#FFFFFF"><b>/msg botname rules #channel gunconf off</b></span></li>
+       <br>
+       When turned on, if a player has an accident, or fires their gun without a duck in the area, that player's gun is confiscated until the following duck is shot by someone else.
+       The player's gun will be silently returned upon the following duck being successfully shot down. <br>
+       Pre-config: ON<br>
+       <br>
+        <span style="color:#DD8800"><b>Bullet Ricochet</b></span><br>
+        <br>
+                 <li><span style="color:#FFFFFF"><b>/msg botname rules #channel gunricochet 0</b></span><br>
+                 This turns bullet ricochets OFF.</li>
+                 <br>
+                 <li><span style="color:#FFFFFF"><b>/msg botname rules #channel gunricochet X</b></span><br>
+                 This will determine the percentage of a bullet ricocheting when a player misses. 1-100. Recommend 5<br>
+                 </li>
+                 <br>
+                 Gun ricochet is disabled at 0. If enabled, ricochets will result in a player accident. If gun confiscation is on, the player's gun will also be confiscated.<br>
+                 Pre-config: 15<br>
+                 <br>
+       <span style="color:#DD8800"><b>Searching The Bushes</b></span><br>
+       <br>
+       <li><span style="color:#FFFFFF"><b>/msg botname rules #channel thebushes 0</b></span><br>
+       This turns searching the bushes OFF.</li>
+       <br>
+       <li><span style="color:#FFFFFF"><b>/msg botname rules #channel thebushes X</b></span><br>
+       This will determine the percentage of objects found by players when they search the bushes after shooting a duck.</li>
+       <br>
+       Searching the bushes is disabled at 0. If enabled, 1-100% of players will find objects in the bushes after shooting a duck. Recommend 15<br>
+       Pre-config: 20<br>
+       <br>
+       <span style="color:#DD8800"><b>Infinite Ammo</b></span><br>
+       <br>
+       <li><span style="color:#FFFFFF"><b>/msg botname rules #channel infammo on</b></span></li>
+       <li><span style="color:#FFFFFF"><b>/msg botname rules #channel infammo off</b></span></li>
+       <br>
+       When turned on players will have infinite gun magazines, and infinite bread loafs. Players will still need to reload, but will not run out of ammo.<br>
+       Pre-config: OFF<br>
+       <br>
+       <span style="color:#DD8800"><b>No shooting (!bang command set)</b></span><br>
+       <br>
+        <li><span style="color:#FFFFFF"><b>/msg botname rules #channel bang on</b></span></li>
+        <li><span style="color:#FFFFFF"><b>/msg botname rules #channel bang off</b></span></li>
+        <br>
+        Disabling bang will result in a different game experience with a reduced shop menu and functionality. This setting cannot be disabled unless !bef command set is enabled.<br>
+        Turning bang off disables the following commands: !bang, !reload, !rearm<br>
+        Turning bang off disables the following shop items: 1, 2, 3, 4, 5, 6, 7, 8, 9, 15, 17, 18, 23, 24<br>
+        Pre-config: bang ON<br>
+        <br>
+        <span style="color:#DD8800"><b>No befriending (!bef command set)</b></span><br>
+        <br>
+        <li><span style="color:#FFFFFF"><b>/msg botname rules #channel bef on</b></span></li>
+        <li><span style="color:#FFFFFF"><b>/msg botname rules #channel bef off</b></span></li>
+        <br>
+        Disabling bef will result in a different game experience with a recuded shop menu and functionality. This setting cannot be disabled unless !bang command set is enabled.<br>
+        Turning bef off disables the following commands: !bef, !bread<br>
+        Turning bef off disables the following shop items: 19, 20, 21<br>
+        Pre-config: bef ON
+        </ul>
+        <br>
+        <span style="color:#DD8800"><b>[Configuring Flood Control]</b></span><br>
+        <br>
+        Flood control settings are currently experimental. The flood control system is designed to reduce virtual load and CPU usage, while also preventing the bot from an excess flood on the IRC network.<br>
+        <br>
+        The maxducks and duckfear configuration settings can also be used to help fine tune flood control, by setting maxducks and duckfear to their recommended values. In general situations, this should trigger the ducks to flee just before the threshold of flood protection is reached, and puts
+        a limit on how many ducks can exists at one time, thereby reducing demand from users when ducks exist. Certain commands like !shop and !duckstats will also trigger flood control quicker, because of their multi-line message formats.<br>
+        <br>
+        <ul>
+        <li><span style="color:#FFFFFF"><b>/msg botname floodcheck #channel on</b></span><br></li>
+		<li><span style="color:#FFFFFF"><b>/msg botname floodcheck #channel off</b></span><br></li>
+        This enables or disables flood control<br>
+        <br>
+        Flood control is currently a hard coded value that cannot be changed.<br>
+        Pre-config: ON</li>
+        <br>
+        </ul></ul>
+        <span style="color:#DD8800"><b>
+        <span style="font-size: 13pt">
+        <a name='resetting the game'></a>
+        --------------------------------------------------------------<br>
+        3. Resetting the game<br>
+        --------------------------------------------------------------<br>
+        </span>
+        </b></span>
+        <ul>
+		Resetting the game can be done by a single command (listed below.)<br>
+		<br>
+		If the configuration file for the server/channel instance has becomed erroneous, to reset to defaults, shut down the bot. Open the zCore folder, locate duckhunt_server_channel.cnf and delete it. Restart the bot. Upon restarting
+		the server and channel configuration file will self generate a new file with the default settings.
+        <br>
+		<br>
+         <span style="color:#DD8800"><b>[Reset Command]</b></span><br>
+         <br>
+		 Resetting the game permanently erases all player stats, timed effects and timed inventory data. Back up the duckhunt_server_channel.cnf file if you want to save previous data. This command DOES NOT self-backup.
+         <ul>
+         <li><span style="color:#FFFFFF"><b>/msg botname reset #channel</b></span><br>
+         This will permanently delete all player data and start over fresh.<br></ul>
+         <br>
+         </ul>
+        <span style="color:#DD8800"><b>
+        <span style="font-size: 13pt">
+        <a name='botmaster-admin-commands'></a>
+        --------------------------------------------------------------<br>
+        4. Botmaster and Admin Chat Commands<br>
+        --------------------------------------------------------------<br>
+        </span>
+        </b></span>
+        These are the commands that botmasters and admins can use in chat during the game.<br>
+        <br>
+        <ul>
+         <span style="color:#DD8800"><b>[Botmaster and Admin Chat Commands]</b></span><br>
+         <br>
+         <li><span style="color:#DD8800"><b>!duckhunt on/off</b></span><br>Turn DuckHunt ON or OFF</li>
+         <br>
+         <li><span style="color:#DD8800"><b>!rearm</b></span><br>Rearm yourself</li>
+         <br>
+         <li><span style="color:#DD8800"><b>!rearm username</b></span><br>Rearm specified user</li>
+         <br>
+         <li><span style="color:#DD8800"><b>!rearm all</b></span><br>Return all confiscated guns</li>
+         <br>
+         <li><span style="color:#DD8800"><b>!disarm username</b></span><br>Confiscate username's gun</li>
+		 <br>
+		 <li><span style="color:#DD8800"><b>!release</b></span><br>Release yourself from an illegal camping penalty</li>
+         <br>
+		 <li><span style="color:#DD8800"><b>!release username</b></span><br>Release username from an illegal camping penalty</li>
+		 <br>
+		 <li><span style="color:#DD8800"><b>!release all</b></span><br>Release all illegal camping penalties.</li>
+		 <br>
+         <li><span style="color:#DD8800"><b>!flood</b></span><br>Flood control activation override</li>
+         <br>
+         <li><span style="color:#DD8800"><b>/msg botname duckstats #channel</b></span><br>View your stats</li>
+         <br>
+         <li><span style="color:#DD8800"><b>/msg botname duckstats #channel username</b></span><br>View another player's stats</li>
+         <br>
+         <li><span style="color:#DD8800"><b>/msg botname spawn #channel</b></span><br>Spawns a random duck in chat</li>
+         <br>
+         <li><span style="color:#DD8800"><b>/msg botname spawn #channel normal</b></span><br>Spawns a normal duck in chat</li>
+         <br>
+         <li><span style="color:#DD8800"><b>/msg botname spawn #channel golden</b></span><br>Spawns a golden duck in chat</li>
+
+         </ul>
+        </ul>
+        </ul>
+    </span>
+</p>
+</div>
+</span>
+</td></tr>
+</table>
+</span>
+</span>
+</body>
+
+</html>
