@@ -345,7 +345,17 @@ a:active {
         Disabling bef will result in a different game experience with a recuded shop menu and functionality. This setting cannot be disabled unless !bang command set is enabled.<br>
         Turning bef off disables the following commands: !bef, !bread<br>
         Turning bef off disables the following shop items: 19, 20, 21<br>
-        Pre-config: bef ON
+        Pre-config: bef ON<br>
+		<br>
+		<span style="color:#DD8800"><b>Illegal Camping</b></span><br>
+		<br>
+		<li><span style="color:#FFFFFF"><b>/msg botname rules #channel camping X^N</b></span></li>
+		<br>
+		To turn on <b>FREE CAMPING</b> (i.e. no illegal camping penalties) specify X^N as 0^0.<br>
+		This allows you to change the timing and amount of ducks needed for a player to receive an illegal camping penalty. X = the number of ducks allowed, N = the number of hours for the time limit.<br>
+		<b>/msg botname rules #channel camping 15^2</b> will set illegal camping penalties to 15 ducks in 2 hours.<br>
+		<b>/msg botname rules #channel camping 0^0</b> this will disable illegal camping and enable FREE CAMPING.<br>
+		Pre-config: 15^2<br>
         </ul>
         <br>
         <span style="color:#DD8800"><b>[Configuring Flood Control]</b></span><br>
